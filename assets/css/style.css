@@ -6,96 +6,176 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #f0f2f5;
     color: #333;
-    padding: 20px;
 }
 
+/* Estilo HUD - Cabeçalho Fixo */
 header {
-    background-color: #2c3e50;
+    background-color: rgba(44, 62, 80, 0.95);
     color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
 }
 
 header h1 {
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
     color: #ecf0f1;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 1100px;
+    margin: 40px auto;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Estilos para a Lista de Produtos */
-ul {
+main h2 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* --- FORMATAÇÃO DA LISTA DE PRODUTOS --- */
+ul.lista-produtos {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
     padding: 0;
 }
 
-ul li {
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
+ul.lista-produtos li {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
     padding: 15px;
-    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-ul li img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-    border-radius: 4px;
+ul.lista-produtos li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    border-color: #3498db;
+}
+
+ul.lista-produtos li h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+ul.lista-produtos li p {
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+ul.lista-produtos li img {
+    width: 100%;
+    max-width: 160px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+ul.lista-produtos li a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+}
+
+ul.lista-produtos li a:hover {
+    background-color: #2980b9;
 }
 
 /* Estilos para Formulário */
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+}
+
 form p {
     margin-bottom: 15px;
 }
 
 form label {
-    font-weight: bold;
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-family: inherit;
 }
 
 form button {
-    background-color: #2c3e50;
+    background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
+    width: 100%;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    color: #666;
+    margin-top: 40px;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    border-top: 1px solid #e1e4e8;
 }

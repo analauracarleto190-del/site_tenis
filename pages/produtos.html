@@ -4,42 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Produtos - Site Tênis</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
 </head>
 <body>
+    <!-- O header fornece o fundo escuro para o menu aparecer -->
     <header>
+        <h1>Meu Site</h1>
         <nav>
-            <a href="index.html">Início</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="contato.html">Contato</a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
-
-        <h1>Nossos Produtos</h1>
     </header>
 
     <main>
         <section>
             <h2>Modelos em Destaque</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Modelo</th>
-                        <th>Categoria</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tênis Esportivo Runner</td>
-                        <td>Corrida</td>
-                        <td>R$ 299,90</td>
-                    </tr>
-                    <tr>
-                        <td>Tênis Casual Urban</td>
-                        <td>Dia a Dia</td>
-                        <td>R$ 199,90</td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="lista-produtos">
+                <li>
+                    <h3>Tênis Esportivo Runner</h3>
+                    <p>Preço: R$ 299,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Esportivo Runner" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Casual Urban</h3>
+                    <p>Preço: R$ 199,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Casual Urban" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Basquete High Court</h3>
+                    <p>Preço: R$ 450,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Basquete High Court" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Skate Street Style</h3>
+                    <p>Preço: R$ 249,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Skate Street Style" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Corrida Pro Speed</h3>
+                    <p>Preço: R$ 380,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Corrida Pro Speed" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Couro Classic</h3>
+                    <p>Preço: R$ 320,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Couro Classic" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Caminhada Soft</h3>
+                    <p>Preço: R$ 179,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Caminhada Soft" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Infantil Power Play</h3>
+                    <p>Preço: R$ 149,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Infantil Power Play" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Futsal Grip Top</h3>
+                    <p>Preço: R$ 220,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Futsal Grip Top" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Slip-On Prático</h3>
+                    <p>Preço: R$ 129,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Slip-On Prático" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Trail Off-Road</h3>
+                    <p>Preço: R$ 410,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Trail Off-Road" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Retro 90s</h3>
+                    <p>Preço: R$ 280,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Retro 90s" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Academia Fit Cross</h3>
+                    <p>Preço: R$ 260,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Academia Fit Cross" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Plataforma Chic</h3>
+                    <p>Preço: R$ 230,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Plataforma Chic" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Minimalista Eco</h3>
+                    <p>Preço: R$ 310,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Minimalista Eco" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Vôlei Spike High</h3>
+                    <p>Preço: R$ 340,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Vôlei Spike High" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Tênis Court Master</h3>
+                    <p>Preço: R$ 390,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Tênis Court Master" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Esportivo Air Cushion</h3>
+                    <p>Preço: R$ 350,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Esportivo Air Cushion" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Botinha Urban</h3>
+                    <p>Preço: R$ 270,00</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Botinha Urban" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+                <li>
+                    <h3>Tênis Edição Limitada Gold</h3>
+                    <p>Preço: R$ 599,90</p>
+                    <img src="../assets/images/tenis.jpg" alt="Tênis Edição Limitada Gold" width="150">
+                    <br>
+                    <a href="contato.html">Quero Comprar</a>
+                </li>
+            </ul>
         </section>
     </main>
 

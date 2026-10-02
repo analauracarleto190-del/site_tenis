@@ -1,0 +1,290 @@
+/* ===== Variáveis ===== */
+:root {
+  --azul-escuro: #37495a;
+  --azul-titulo: #2c3e50;
+  --azul-destaque: #3498db;
+  --fundo: #eff1f5;
+  --branco: #ffffff;
+  --texto: #2b2b2b;
+  --borda-escura: #2b2b2b;
+}
+
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== Topo / Menu ===== */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--azul-escuro);
+  padding: 20px 36px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.logo {
+  color: var(--branco);
+  font-size: 1.7rem;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  border-bottom-color: var(--azul-destaque);
+  outline: none;
+}
+
+/* ===== Conteúdo principal ===== */
+.conteudo {
+  background: var(--branco);
+  margin: 50px 0 40px;
+  padding: 60px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Seções ===== */
+.secao {
+  padding: 20px;
+  margin-bottom: 24px;
+  scroll-margin-top: 20px;
+}
+
+.secao-solida {
+  border: 2px solid var(--borda-escura);
+}
+
+.secao-tracejada {
+  border: 2px dashed var(--azul-destaque);
+}
+
+.secao h2 {
+  color: var(--azul-titulo);
+  font-size: 1.8rem;
+  padding: 10px 0 16px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--azul-destaque);
+}
+
+.secao p + p {
+  margin-top: 4px;
+}
+
+/* ===== Filtros ===== */
+.filtros {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filtro {
+  font: inherit;
+  font-weight: 600;
+  background: var(--branco);
+  color: var(--azul-titulo);
+  border: 2px solid var(--azul-destaque);
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filtro:hover {
+  background: #eaf4fc;
+}
+
+.filtro.ativo {
+  background: var(--azul-destaque);
+  color: var(--branco);
+}
+
+/* ===== Grade de produtos ===== */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid var(--borda-escura);
+  background: var(--branco);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-imagem {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-bottom: 2px solid var(--azul-destaque);
+}
+
+.card-corpo {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.card-corpo h3 {
+  color: var(--azul-titulo);
+  font-size: 1.15rem;
+}
+
+.card-categoria {
+  font-size: 0.85rem;
+  color: #5f6b76;
+}
+
+.preco {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul-titulo);
+  margin: 6px 0 10px;
+}
+
+/* ===== Botões ===== */
+.botao {
+  font: inherit;
+  font-weight: 600;
+  background: var(--azul-escuro);
+  color: var(--branco);
+  border: 2px solid var(--azul-escuro);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: auto;
+}
+
+.botao:hover,
+.botao:focus-visible {
+  background: var(--azul-destaque);
+  border-color: var(--azul-destaque);
+  outline: none;
+}
+
+.botao-secundario {
+  background: var(--branco);
+  color: var(--azul-escuro);
+  margin-top: 12px;
+}
+
+/* ===== Carrinho ===== */
+.lista-carrinho {
+  list-style: none;
+}
+
+.lista-carrinho li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d5dae1;
+}
+
+.lista-carrinho button {
+  font: inherit;
+  background: none;
+  border: none;
+  color: #c0392b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 14px;
+  font-size: 1.2rem;
+}
+
+/* ===== Formulário ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 560px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--azul-titulo);
+  margin-top: 8px;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 10px 12px;
+  border: 2px solid var(--borda-escura);
+  background: var(--branco);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--azul-destaque);
+}
+
+.aviso {
+  min-height: 1.5em;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.aviso.erro { color: #c0392b; }
+.aviso.ok   { color: #1e8449; }
+
+#form-contato .botao {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  text-align: center;
+  padding: 0 20px 30px;
+  color: #5f6b76;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 700px) {
+  .topo { padding: 16px 20px; }
+  .menu { gap: 18px; }
+  .conteudo { padding: 24px 16px; margin-top: 30px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

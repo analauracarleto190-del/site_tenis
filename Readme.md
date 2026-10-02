@@ -319,3 +319,109 @@ As diretrizes serao aplicadas a tela de Login da Nova-Web da seguinte forma:
 
 * WCAG 2.2 - Focus Visible
   https://www.w3.org/WAI/WCAG22/Understanding/focus-visible
+
+---
+  ### 1. Pesquisa Teorica - UX para Tabelas Corporativas
+
+#### Alinhamento de Dados
+
+O alinhamento dos dados deve facilitar a leitura e permitir que o usuario identifique rapidamente as informacoes mais importantes.
+
+* Textos devem ser alinhados a esquerda, pois esse formato facilita a leitura de nomes, descricoes e outros conteudos textuais.
+* Numeros e valores monetarios devem ser alinhados a direita, facilitando a comparacao entre diferentes valores.
+* Status, icones e acoes rapidas podem ser centralizados para manter uma organizacao visual consistente.
+* O mesmo padrao de alinhamento deve ser mantido em todas as linhas e colunas da tabela.
+
+O alinhamento consistente cria uma estrutura visual previsivel e reduz o esforco necessario para localizar informacoes.
+
+#### Filtros e Busca
+
+A busca e os filtros devem ser posicionados de forma que sejam facilmente encontrados antes da tabela.
+
+* O campo de pesquisa principal deve ficar na parte superior da tabela, preferencialmente no lado esquerdo ou em uma posicao de destaque.
+* O campo pode utilizar um icone de lupa para indicar visualmente sua funcao.
+* Filtros relacionados podem ficar proximos ao campo de pesquisa.
+* Filtros avancados podem ser organizados em menus suspensos ou paineis para evitar excesso de elementos na tela.
+* Os filtros devem possuir nomes claros para que o usuario entenda quais dados serao filtrados.
+* Quando filtros estiverem ativos, o sistema deve deixar essa condicao visualmente clara.
+
+Uma boa organizacao da busca permite que o usuario encontre registros especificos sem precisar percorrer toda a tabela.
+
+#### Hierarquia Visual
+
+A tabela deve apresentar uma hierarquia visual clara entre cabecalho, dados e acoes.
+
+* O cabecalho deve possuir destaque visual em relacao ao restante da tabela.
+* Em tabelas extensas, um cabecalho fixo pode facilitar a identificacao das colunas durante a rolagem.
+* Linhas alternadas ou bordas sutis podem ser utilizadas para facilitar o acompanhamento horizontal dos dados.
+* Espacamentos consistentes devem ser utilizados entre linhas e colunas.
+* As informacoes mais importantes devem possuir maior destaque visual.
+* Acoes como editar, visualizar e excluir devem ser facilmente identificaveis, mas sem competir visualmente com os dados principais.
+
+#### Paginacao
+
+Quando uma tabela possui muitos registros, a paginacao pode ser utilizada para dividir os resultados em diferentes paginas.
+
+* Deve indicar quantos registros estao sendo exibidos.
+* Deve informar a quantidade total de resultados.
+* Deve possuir controles claros para avancar e voltar entre paginas.
+* A pagina atual deve ser identificada visualmente.
+
+Exemplo:
+
+```text
+Mostrando 1-10 de 50 resultados
+
+Anterior | 1 | 2 | 3 | 4 | 5 | Proximo
+```
+
+A paginacao evita que uma grande quantidade de dados seja apresentada de uma unica vez e facilita a navegacao pelos registros.
+
+#### Acoes nas Linhas
+
+As acoes relacionadas a cada registro devem ficar proximas aos dados correspondentes.
+
+Exemplos:
+
+* Visualizar
+* Editar
+* Excluir
+
+Os icones ou botoes devem possuir uma funcao clara. Acoes que podem causar alteracoes importantes ou exclusao de dados devem possuir uma identificacao clara para evitar erros do usuario.
+
+#### Status e Indicadores
+
+Informacoes de status podem utilizar componentes visuais como badges ou pills.
+
+Exemplo:
+
+```text
+ATIVO
+INATIVO
+PENDENTE
+```
+
+As cores podem ajudar na identificacao dos estados, mas a informacao nao deve depender exclusivamente da cor. O texto do status deve permanecer visivel para garantir melhor compreensao e acessibilidade.
+
+#### Responsividade
+
+Tabelas devem considerar o tamanho da tela em que serao utilizadas.
+
+Em telas maiores, mais colunas podem ser exibidas simultaneamente. Em telas menores, pode ser necessario reduzir informacoes, reorganizar colunas ou utilizar rolagem horizontal.
+
+O objetivo e manter os dados acessiveis sem comprometer a legibilidade e a facilidade de uso.
+
+---
+
+### 2. Especificacao do Prototipo - Figma
+
+* **Link do Projeto no Figma:** [Cole o link do seu projeto aqui]
+
+* **Telas Desenvolvidas:**
+
+  1. **Perfil de Usuario:** Exibicao de avatar, nome, cargo, status, dados pessoais, formulario de edicao e nivel de permissao. A tela tambem possui uma area de seguranca para alteracao de senha e configuracao de autenticacao em duas etapas.
+
+  2. **Area de Consulta:** Tabela para gerenciamento de usuarios contendo busca, filtros, ordenacao, paginacao e acoes como visualizar, editar e excluir.
+
+As decisoes de interface foram baseadas em principios de organizacao visual, consistencia, usabilidade e acessibilidade.
+

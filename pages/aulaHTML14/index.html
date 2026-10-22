@@ -1,0 +1,46 @@
+html
+<!--
+Descricao: Exercícios da Aula 14 - CSS para Formulários
+nome_arquivo: index.html
+nome_exercicio: Desafio 14 - CSS para Formulários
+nome_aluno: Ana Laura Carleto Sanches
+email_aluno: ana.carleto@portalsesisp.org.br
+turma: 1A
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Formulário de Cadastro</h1>
+        <p>Clique em habilitar para preencher cada campo.</p>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" disabled required>
+            <button type="button" onclick="habilitarCampo('nome')">Habilitar</button>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" disabled required>
+            <button type="button" onclick="habilitarCampo('email')">Habilitar</button>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="Digite seu telefone" disabled>
+            <button type="button" onclick="habilitarCampo('telefone')">Habilitar</button>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Digite sua cidade" disabled>
+            <button type="button" onclick="habilitarCampo('cidade')">Habilitar</button>
+        </form>
+    </main>
+
+</body>
+</html>

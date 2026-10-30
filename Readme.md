@@ -425,3 +425,8 @@ O objetivo e manter os dados acessiveis sem comprometer a legibilidade e a facil
 
 As decisoes de interface foram baseadas em principios de organizacao visual, consistencia, usabilidade e acessibilidade.
 
+# LINK FIGMA
+## https://www.figma.com/design/7hlaDZfWX8gdU8Bs4Ac7Hm/Figma?node-id=23-6&t=xCXtGhGd4gdTwFom-1
+
+# LINK EXCEL
+## https://sesisenaispedu.sharepoint.com/:x:/r/sites/TDE-1BAA-26/_layouts/15/doc2.aspx?sourcedoc=%7B3F82C6DF-6644-4FA0-BD50-D39218CD2A0E%7D&file=Checklist_SA02.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-ASSIGN-WEB.ASSIGN-STUD-VIEW.STUD

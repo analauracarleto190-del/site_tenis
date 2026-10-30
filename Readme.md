@@ -430,3 +430,6 @@ As decisoes de interface foram baseadas em principios de organizacao visual, con
 
 # LINK EXCEL
 ## https://sesisenaispedu.sharepoint.com/:x:/r/sites/TDE-1BAA-26/_layouts/15/doc2.aspx?sourcedoc=%7B3F82C6DF-6644-4FA0-BD50-D39218CD2A0E%7D&file=Checklist_SA02.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-ASSIGN-WEB.ASSIGN-STUD-VIEW.STUD
+
+# Organização das Aulas (Linguagem de Marcação)
+Todas as paginas da SA02 estão em /pages
